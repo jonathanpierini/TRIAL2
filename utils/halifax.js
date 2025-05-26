@@ -1,46 +1,29 @@
 
-import React from 'react';
-import { Radar } from 'react-chartjs-2';
-import {
-  Chart as ChartJS,
-  RadialLinearScale,
-  PointElement,
-  LineElement,
-  Filler,
-  Tooltip,
-  Legend
-} from 'chart.js';
+export function calcolaHexaflex(responses, actItems) {
+  const poli = {};
 
-ChartJS.register(
-  RadialLinearScale,
-  PointElement,
-  LineElement,
-  Filler,
-  Tooltip,
-  Legend
-);
+  // Calcola somma pesata per ciascun polo
+  actItems.forEach((item, index) => {
+    const risposta = responses[index];
+    const peso = item.peso;
+    const polo = item.polo;
 
-export default function HexaflexRadar({ profilo }) {
-  const labels = Object.keys(profilo);
-  const data = Object.values(profilo);
+    if (!poli[polo]) {
+      poli[polo] = { somma: 0, pesi: 0 };
+    }
 
-  const chartData = {
-    labels: labels,
-    datasets: [
-      {
-        label: 'Profilo Hexaflex',
-        data: data,
-        backgroundColor: 'rgba(54, 162, 235, 0.2)',
-        borderColor: 'rgba(54, 162, 235, 1)',
-        borderWidth: 2,
-        pointBackgroundColor: 'rgba(54, 162, 235, 1)',
-      }
-    ]
-  };
+    poli[polo].somma += risposta * peso;
+    poli[polo].pesi += Math.abs(peso);
+  });
 
-  return (
-    <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-      <Radar data={chartData} />
-    </div>
-  );
+  // Calcola media normalizzata su scala 0–100
+  const profilo = {};
+  Object.keys(poli).forEach(polo => {
+    const { somma, pesi } = poli[polo];
+    const media = somma / pesi;
+    const normalizzato = ((media + 5) / 10) * 100;
+    profilo[polo] = Math.round(normalizzato);
+  });
+
+  return profilo;
 }
