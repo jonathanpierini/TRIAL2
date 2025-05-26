@@ -5,11 +5,25 @@
     "defusione": {
       "tone": "curioso, chiaro, centrato",
       "prompt_addition": "Aiuta l’utente a notare i propri pensieri come eventi mentali, non come verità. Esempio: 'Questo pensiero potrebbe essere solo un pensiero?'"
+      "trigger": "Se il punteggio del polo Defusione è < 40",
+    "introduzione_terapeuta": "La persona può essere fusa con i propri pensieri o credere che siano verità assolute.",
+    "prompt_livello1": "Quel pensiero sembra molto presente. Possiamo provare a guardarlo da fuori, come se fosse solo una voce che parla?",
+    "prompt_livello2": "Prova a ripetere quel pensiero lentamente con voce buffa o cantata. Ti accorgi che perde forza?",
+    "transizione_verbale": "Posso mostrarti un modo diverso di osservare i pensieri?",
+    "micro_obiettivo": "Ripetere un pensiero difficile ad alta voce con tono ironico per 30 secondi.",
+    "note_cliniche": "Attivare se la persona si identifica rigidamente con pensieri negativi o automatici."
     },
     "accettazione": {
       "tone": "gentile, contenitivo",
       "prompt_addition": "Aiuta l’utente a fare spazio alle emozioni difficili, anche se dolorose. Esempio: 'Questa emozione ha diritto di esistere, anche se è scomoda.'"
-    },
+    "trigger": "Se il punteggio del polo Accettazione è < 40",
+    "introduzione_terapeuta": "La persona può mostrare evitamento esperienziale, difficoltà a restare con emozioni scomode.",
+    "prompt_livello1": "Capisco che stare con alcune emozioni può sembrare impossibile. Ti va se ci soffermiamo su cosa stavi provando, senza cercare di cambiarlo?",
+    "prompt_livello2": "Prova a notare quell’emozione e dirle: 'Puoi restare con me, anche solo per poco'.",
+    "transizione_verbale": "Ti va se facciamo un piccolo esperimento insieme?",
+    "micro_obiettivo": "Restare 10 secondi in compagnia di una sensazione difficile senza distrarsi.",
+    "note_cliniche": "Attivare se la persona mostra evitamento, disconnessione emotiva o razionalizzazione difensiva."
+   },
     "valori": {
       "tone": "ispirato, motivazionale, rispettoso",
       "prompt_addition": "Focalizza l’attenzione su ciò che conta per l’utente. Esempio: 'Cosa c’è di importante sotto questa difficoltà?'"
@@ -17,14 +31,42 @@
     "contatto": {
       "tone": "radicato, calmo, sensoriale",
       "prompt_addition": "Favorisci l’attenzione sul momento presente, corpo, sensi. Esempio: 'Proviamo a fermarci un attimo: senti il tuo respiro, ora?'"
+      "trigger": "Se il punteggio del polo Contatto con il presente è < 40",
+    "introduzione_terapeuta": "La persona può essere disconnessa dal momento attuale, in uno stato di distrazione o ruminazione.",
+    "prompt_livello1": "Ti capita di accorgerti solo dopo che certi momenti sono passati? Possiamo provare ora a notare insieme dove siamo?",
+    "prompt_livello2": "Porta l’attenzione a 5 cose che vedi, 4 che senti, 3 che tocchi, 2 che annusi, 1 che assapori.",
+    "transizione_verbale": "Facciamo un breve esercizio insieme, ti va?",
+    "micro_obiettivo": "Fare 1 minuto di consapevolezza sensoriale (5-4-3-2-1).",
+    "note_cliniche": "Utile se il paziente mostra vaghezza, fuga cognitiva, ritiro mentale."
+    "trigger": "Se il punteggio del polo Sé come contesto è < 40",
+    "introduzione_terapeuta": "La persona può identificarsi con etichette rigide (es. 'sono sbagliato') o ruoli statici.",
+    "prompt_livello1": "Ti capita di dirti frasi tipo 'sono fatto così'? E se potessimo osservare chi dice quella frase?",
+    "prompt_livello2": "Aggiungi davanti al pensiero 'sono sbagliato' la frase: 'sto notando che penso che...'. Cambia qualcosa?",
+    "transizione_verbale": "Proviamo a fare un piccolo spostamento di prospettiva?",
+    "micro_obiettivo": "Scrivere 3 pensieri su di sé preceduti da 'sto notando che penso che...'.",
+    "note_cliniche": "Utile in caso di identità rigide, bassa autocompassione, pensiero dicotomico."
     },
     "selfAsContext": {
       "tone": "osservante, ampio, stabile",
       "prompt_addition": "Aiuta l’utente a distinguersi dai propri contenuti mentali. Esempio: 'Chi sta osservando questo pensiero, in questo momento?'"
+       "trigger": "Se il punteggio del polo Valori è < 40",
+    "introduzione_terapeuta": "La persona può essere disconnessa dai propri valori o non averli esplorati.",
+    "prompt_livello1": "Quando pensi a chi vuoi essere, che parole ti vengono in mente? Cosa conta davvero per te?",
+    "prompt_livello2": "Pensa a qualcuno che ammiri. Che qualità ti colpiscono? Le desideri anche per te?",
+    "transizione_verbale": "Posso farti una domanda un po’ personale, se ti va?",
+    "micro_obiettivo": "Scrivi 3 valori che ti guiderebbero in un momento difficile.",
+    "note_cliniche": "Attivare se il paziente mostra smarrimento, vuoto, scarsa direzione."
     },
     "committedAction": {
       "tone": "incoraggiante, concreto, pragmatico",
       "prompt_addition": "Sostieni piccoli passi verso i valori, anche in condizioni difficili. Esempio: 'Cosa potresti fare oggi, anche solo per 5 minuti, in quella direzione?'"
+      "trigger": "Se il punteggio del polo Azione impegnata è < 40",
+    "introduzione_terapeuta": "La persona sa cosa conta ma è bloccata nel fare passi coerenti.",
+    "prompt_livello1": "Hai mai sentito di sapere cosa vuoi ma non riuscire a muoverti? Possiamo cercare insieme un primo passo?",
+    "prompt_livello2": "Anche una piccola azione oggi può essere un inizio. Qual è un gesto che senti fattibile adesso?",
+    "transizione_verbale": "Ti va di esplorare un passo concreto insieme?",
+    "micro_obiettivo": "Identificare un’azione semplice e farla entro le prossime 24h.",
+    "note_cliniche": "Attivare in caso di evitamento comportamentale, passività, procrastinazione."
     }
   },
   "instructions": {
