@@ -1,32 +1,185 @@
 [
   {
-    "id": "q1",
-    "text": "Hai sperimentato cambiamenti nel tuo umore nell'ultimo mese?",
-    "type": "likert",
-    "options": [
-      "Questa frase mi è lontana",
-      "In parte la riconosco",
-      "A volte mi succede",
-      "Spesso mi succede",
-      "Mi succede quasi sempre"
-    ],
-    "actPole": "defusion"
+    "Item":"Provi emozioni difficili che cerchi di sopprimere?",
+    "Polo_ACT":"Accettazione",
+    "Peso":-0.9
   },
   {
-    "id": "q2",
-    "text": "Ti senti spesso ansioso o in preda a preoccupazioni?",
-    "type": "likert",
-    "options": [
-      "Questa frase mi è lontana",
-      "In parte la riconosco",
-      "A volte mi succede",
-      "Spesso mi succede",
-      "Mi succede quasi sempre"
-    ],
-    "actPole": "defusion"
+    "Item":"Ti capita di evitare emozioni spiacevoli per non sentirti sopraffatto?",
+    "Polo_ACT":"Accettazione",
+    "Peso":-0.7
   },
   {
-    "id": "q3",
+    "Item":"Cerchi spesso di controllare come ti senti?",
+    "Polo_ACT":"Accettazione",
+    "Peso":-0.5
+  },
+  {
+    "Item":"Ti arrabbi con te stesso per provare emozioni negative?",
+    "Polo_ACT":"Accettazione",
+    "Peso":0.5
+  },
+  {
+    "Item":"Ti risulta difficile tollerare il disagio emotivo?",
+    "Polo_ACT":"Accettazione",
+    "Peso":0.7
+  },
+  {
+    "Item":"Hai mai fatto qualcosa solo per non sentire ciò che stavi provando?",
+    "Polo_ACT":"Accettazione",
+    "Peso":0.9
+  },
+  {
+    "Item":"Ti capita di credere ciecamente ai tuoi pensieri negativi?",
+    "Polo_ACT":"Defusione",
+    "Peso":-0.9
+  },
+  {
+    "Item":"Un pensiero può bloccare una tua decisione anche se non è realistico?",
+    "Polo_ACT":"Defusione",
+    "Peso":-0.7
+  },
+  {
+    "Item":"Hai difficoltà a staccarti da pensieri ricorrenti?",
+    "Polo_ACT":"Defusione",
+    "Peso":-0.5
+  },
+  {
+    "Item":"Prendi i tuoi pensieri come se fossero assolutamente veri?",
+    "Polo_ACT":"Defusione",
+    "Peso":0.5
+  },
+  {
+    "Item":"Quando un pensiero ti colpisce, ti sembra l’unica verità?",
+    "Polo_ACT":"Defusione",
+    "Peso":0.7
+  },
+  {
+    "Item":"I tuoi pensieri ti guidano più dei tuoi valori?",
+    "Polo_ACT":"Defusione",
+    "Peso":0.9
+  },
+  {
+    "Item":"Ti accorgi facilmente di ciò che sta accadendo nel momento presente?",
+    "Polo_ACT":"Contatto con il presente",
+    "Peso":-0.9
+  },
+  {
+    "Item":"Ti capita di svolgere un’attività senza rendertene conto realmente?",
+    "Polo_ACT":"Contatto con il presente",
+    "Peso":-0.7
+  },
+  {
+    "Item":"Riesci a fermarti e notare cosa succede dentro e intorno a te?",
+    "Polo_ACT":"Contatto con il presente",
+    "Peso":-0.5
+  },
+  {
+    "Item":"Hai momenti in cui ti senti davvero presente e consapevole?",
+    "Polo_ACT":"Contatto con il presente",
+    "Peso":0.5
+  },
+  {
+    "Item":"La tua attenzione vaga spesso nel passato o nel futuro?",
+    "Polo_ACT":"Contatto con il presente",
+    "Peso":0.7
+  },
+  {
+    "Item":"Sei in grado di riportare l’attenzione su ciò che stai facendo?",
+    "Polo_ACT":"Contatto con il presente",
+    "Peso":0.9
+  },
+  {
+    "Item":"Ti definisci in base ai tuoi fallimenti o limiti?",
+    "Polo_ACT":"Sé come contesto",
+    "Peso":-0.9
+  },
+  {
+    "Item":"Ti senti intrappolato in un’immagine fissa di te stesso?",
+    "Polo_ACT":"Sé come contesto",
+    "Peso":-0.7
+  },
+  {
+    "Item":"Fai fatica a vedere che sei più dei tuoi pensieri?",
+    "Polo_ACT":"Sé come contesto",
+    "Peso":-0.5
+  },
+  {
+    "Item":"Ti giudichi duramente per quello che provi?",
+    "Polo_ACT":"Sé come contesto",
+    "Peso":0.5
+  },
+  {
+    "Item":"Quando ti definisci, lo fai usando etichette negative?",
+    "Polo_ACT":"Sé come contesto",
+    "Peso":0.7
+  },
+  {
+    "Item":"Ti dimentichi di osservare te stesso da una prospettiva più ampia?",
+    "Polo_ACT":"Sé come contesto",
+    "Peso":0.9
+  },
+  {
+    "Item":"Sai cosa conta davvero per te nella vita?",
+    "Polo_ACT":"Valori",
+    "Peso":-0.9
+  },
+  {
+    "Item":"Hai chiari i principi che guidano le tue scelte?",
+    "Polo_ACT":"Valori",
+    "Peso":-0.7
+  },
+  {
+    "Item":"Conosci le qualità delle persone che ammiri?",
+    "Polo_ACT":"Valori",
+    "Peso":-0.5
+  },
+  {
+    "Item":"Riesci a identificare ciò che ti dà senso e direzione?",
+    "Polo_ACT":"Valori",
+    "Peso":0.5
+  },
+  {
+    "Item":"Agisci in modo coerente con ciò che ritieni importante?",
+    "Polo_ACT":"Valori",
+    "Peso":0.7
+  },
+  {
+    "Item":"Hai riflettuto su ciò che ti renderebbe orgoglioso di te?",
+    "Polo_ACT":"Valori",
+    "Peso":0.9
+  },
+  {
+    "Item":"Ti capita di evitare situazioni importanti per i tuoi obiettivi?",
+    "Polo_ACT":"Azione impegnata",
+    "Peso":-0.9
+  },
+  {
+    "Item":"Ti senti spesso bloccato anche se sai cosa vorresti fare?",
+    "Polo_ACT":"Azione impegnata",
+    "Peso":-0.7
+  },
+  {
+    "Item":"Metti in pratica azioni concrete in linea con i tuoi valori?",
+    "Polo_ACT":"Azione impegnata",
+    "Peso":-0.5
+  },
+  {
+    "Item":"Anche se hai paura, riesci comunque a fare ciò che conta?",
+    "Polo_ACT":"Azione impegnata",
+    "Peso":0.5
+  },
+  {
+    "Item":"Fai passi reali, anche piccoli, verso la vita che desideri?",
+    "Polo_ACT":"Azione impegnata",
+    "Peso":0.7
+  },
+  {
+    "Item":"Agisci anche quando le emozioni sono difficili?",
+    "Polo_ACT":"Azione impegnata",
+    "Peso":0.9
+  }
+]
     "text": "Hai difficoltà ad addormentarti?",
     "type": "likert",
     "options": [
