@@ -1,21 +1,46 @@
-function calculateHalifaxProfile(responses) {
-  const poles = {
-    defusion: 0,
-    values: 0,
-    acceptance: 0,
-    contact: 0,
-    selfAsContext: 0,
-    committedAction: 0
+
+import React from 'react';
+import { Radar } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend
+} from 'chart.js';
+
+ChartJS.register(
+  RadialLinearScale,
+  PointElement,
+  LineElement,
+  Filler,
+  Tooltip,
+  Legend
+);
+
+export default function HexaflexRadar({ profilo }) {
+  const labels = Object.keys(profilo);
+  const data = Object.values(profilo);
+
+  const chartData = {
+    labels: labels,
+    datasets: [
+      {
+        label: 'Profilo Hexaflex',
+        data: data,
+        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 2,
+        pointBackgroundColor: 'rgba(54, 162, 235, 1)',
+      }
+    ]
   };
 
-  responses.forEach(({ questionId, answerIndex }) => {
-    const question = require('../quiz/questions.json').find(q => q.id === questionId);
-    if (question && poles[question.actPole] !== undefined) {
-      poles[question.actPole] += answerIndex;
-    }
-  });
-
-  return poles;
+  return (
+    <div style={{ maxWidth: '600px', margin: '0 auto' }}>
+      <Radar data={chartData} />
+    </div>
+  );
 }
-
-module.exports = { calculateHalifaxProfile };
